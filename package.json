@@ -1,0 +1,27 @@
+{
+  "name": "morse-translator",
+  "version": "1.0.0",
+  "description": "An English to morse, morse to English translator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iagardi/morse-translator.git"
+  },
+  "author": "Istvan Agardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iagardi/morse-translator/issues"
+  },
+  "homepage": "https://github.com/iagardi/morse-translator#readme",
+  "devDependencies": {
+    "jest": "^27.2.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-jest": "^27.2.0"
+  }
+}
