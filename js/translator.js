@@ -1,5 +1,3 @@
-import morseCode from "../data/data.js";
-
-export const translate = (input) => {
-  return morseCode[input];
+export const translateItBro = (input, object) => {
+  return object[input];
 };

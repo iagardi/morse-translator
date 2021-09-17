@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">English to morse translator</h1>
-    <main></main>
+    <div class="container">
+      <header>
+        <h1>Never learnt morse?</h1>
+        <h2>Feel no remorse!</h2>
+        <h2 id="title">An English to morse translator</h2>
+      </header>
+      <main>
+        <label for="main__entry">What you say:</label><br />
+        <div class="input--area">
+          <textarea id="main__entry" rows="3" cols="30"></textarea>
+          <button id="main__translate">→</button><br />
+        </div>
+        <label for="main__output">What you mean:</label>
+        <div class="main__output"></div>
+      </main>
+    </div>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

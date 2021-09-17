@@ -1,4 +1,4 @@
 import morseCode from "../data/data.js";
-import { translate } from "./translator.js";
+import { translateItBro } from "./translator.js";
 
-console.log(translate("a"));
+console.log(translateItBro("A", morseCode));

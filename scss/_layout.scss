@@ -1,1 +1,23 @@
 @import "./base";
+
+body {
+  height: 100vh;
+}
+
+body,
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-body;
+}
+
+.container {
+  justify-content: space-around;
+  width: 40vw;
+  min-width: 316px;
+  max-width: 414px;
+  height: 80vh;
+  background-color: $color-container;
+}
