@@ -1,5 +1,20 @@
 @import "./base";
 
+.background-photo {
+  background-image: url("../image/background.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 8%;
+}
+
+.container {
+  box-sizing: content-box;
+  border: 35px solid white;
+  box-shadow: 10px 10px 5px #888
+}
+
 h1,
 h2 {
   text-align: center;
@@ -7,4 +22,16 @@ h2 {
 
 textarea {
   resize: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.howto {
+  text-align: center;
+}
+
+#swap {
+  margin-top: 15px;;
 }

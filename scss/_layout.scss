@@ -4,13 +4,18 @@ body {
   height: 100vh;
 }
 
-body,
+
+
+body, header,
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-body;
+}
+
+header {
+    background-color: $color-container;
 }
 
 .container {
@@ -20,4 +25,8 @@ body,
   max-width: 414px;
   height: 80vh;
   background-color: $color-container;
+}
+
+.main__output {
+  margin-top: 15px;
 }

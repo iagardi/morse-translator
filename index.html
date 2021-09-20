@@ -8,24 +8,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="background-photo"></div>
     <div class="container">
       <header>
-        <h1>Never learnt morse?</h1>
-        <h2>Feel no remorse!</h2>
-        <h2 id="title">An English to morse translator</h2>
+        <h1 class="header--font">Never learnt morse?</h1>
+        <h2 class="header--font">Feel no remorse!</h2><br>
+        <h3 id="EngToMorse">An English to morse translator</h2>
+        <h3 id="MorseToEng" class="invisible">A morse to English translator</h2>
+        <button id="swap">Or try the other way</button>
       </header>
       <main>
         <label for="main__entry">What you say:</label><br />
         <div class="input--area">
           <input type="text" id="main__entry">
-          <button id="main__translate">→</button><br />
+          <button class="main__translate engToMorse">→</button>
+          <button class="main__translate morseToEng invisible">→</button>
         </div>
         <div class="main__output">
-        <label for="main__output">What you mean:</label><br>
+        <label for="main__output">What you really wanted to say:</label><br>
         <textarea name="main__output" id="main__output" cols="30" rows="10"></textarea>
         </div>
       </main>
       <button id="reset">Reset</button>
+      <h3>How to use:</h3>
+      <p class="howto">1. Enter your text (you can only use letters and numbers) <br> 2. Press the arrow to translate <br> 3. There will be 1 space between characters and 2 spaces between words</p>
+      <p class="howto invisible">1. Enter your morse code, mind you it only translates letters and numbers <br> 2. Press the arrow to translate <br> 3. The translator will recognise 1 space between characters and 2 spaces between words</p>
     </div>
     <script src="./js/main.js" type="module"></script>
   </body>

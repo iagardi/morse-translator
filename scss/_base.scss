@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,3 +11,8 @@ $color-body: red;
 $color-container: pink;
 
 // font theme
+
+.header--font {
+  font-family: 'Corben', sans-serif;
+}
+
