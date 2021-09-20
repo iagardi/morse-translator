@@ -17,12 +17,15 @@
       <main>
         <label for="main__entry">What you say:</label><br />
         <div class="input--area">
-          <textarea id="main__entry" rows="3" cols="30"></textarea>
+          <input type="text" id="main__entry">
           <button id="main__translate">→</button><br />
         </div>
-        <label for="main__output">What you mean:</label>
-        <div class="main__output"></div>
+        <div class="main__output">
+        <label for="main__output">What you mean:</label><br>
+        <textarea name="main__output" id="main__output" cols="30" rows="10"></textarea>
+        </div>
       </main>
+      <button id="reset">Reset</button>
     </div>
     <script src="./js/main.js" type="module"></script>
   </body>

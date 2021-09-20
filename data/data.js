@@ -35,6 +35,7 @@ const morseCode = {
   7: "--...",
   8: "---..",
   9: "----.",
+  " ": "  "
 };
 
 export default morseCode;
