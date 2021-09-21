@@ -15,24 +15,26 @@
         <h2 class="header--font">Feel no remorse!</h2><br>
         <h3 id="EngToMorse">An English to morse translator</h2>
         <h3 id="MorseToEng" class="invisible">A morse to English translator</h2>
-        <button id="swap">Or try the other way</button>
+        <button id="swap">Try the other way</button>
       </header>
       <main>
-        <label for="main__entry">What you say:</label><br />
         <div class="input--area">
-          <input type="text" id="main__entry">
-          <button class="main__translate engToMorse">→</button>
-          <button class="main__translate morseToEng invisible">→</button>
+        <label for="main__entry">What you say:</label><br />
+        <textarea name="main__output" id="main__entry" cols="30" rows="7"></textarea>
         </div>
+        <button class="main__translate engToMorse">⇊</button>
+        <button class="main__translate morseToEng invisible">⇊</button>
+        
         <div class="main__output">
         <label for="main__output">What you really wanted to say:</label><br>
-        <textarea name="main__output" id="main__output" cols="30" rows="10"></textarea>
+        <textarea name="main__output" id="main__output" cols="30" rows="7"></textarea>
         </div>
-      </main>
+      
       <button id="reset">Reset</button>
       <h3>How to use:</h3>
       <p class="howto">1. Enter your text (you can only use letters and numbers) <br> 2. Press the arrow to translate <br> 3. There will be 1 space between characters and 2 spaces between words</p>
-      <p class="howto invisible">1. Enter your morse code, mind you it only translates letters and numbers <br> 2. Press the arrow to translate <br> 3. The translator will recognise 1 space between characters and 2 spaces between words</p>
+      <p class="howto invisible">1. Enter morse code (it only translates letters and numbers) <br> 2. Press the arrow to translate <br> 3. The translator will recognise 1 space between characters and 2 spaces between words</p>
+      </main>
     </div>
     <script src="./js/main.js" type="module"></script>
   </body>

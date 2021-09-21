@@ -10,18 +10,29 @@
 }
 
 .container {
-  box-sizing: content-box;
-  border: 35px solid white;
-  box-shadow: 10px 10px 5px #888
+  box-shadow: 10px 10px 5px $color-font
+}
+
+
+#swap, #reset, .main__translate {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 1px solid $color-btn;
+  color: $color-container;
+  background-color: $color-btn;
 }
 
 h1,
-h2 {
+h2, h3, label {
   text-align: center;
+  color: $color-font;
 }
 
 textarea {
   resize: none;
+  color: $color-font;
+  background-color: $color-textarea;
 }
 
 .invisible {
@@ -30,8 +41,15 @@ textarea {
 
 .howto {
   text-align: center;
+  color: $color-font;
 }
 
 #swap {
-  margin-top: 15px;;
+  margin-top: 15px;
+}
+
+#swap:hover, #reset:hover, .main__translate:hover {
+  background-color: $color-font;
+  color: white;
+  border: 1px solid white;
 }
