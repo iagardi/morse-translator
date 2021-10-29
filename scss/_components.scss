@@ -10,7 +10,15 @@
 }
 
 .container {
-  box-shadow: 10px 10px 5px $color-font
+  box-sizing: content-box;
+  border: 2px solid transparent;
+  box-shadow:
+    2px 5px 16px 0px #0B325E,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.container:hover {
+  border: 2px solid $color-btn;
 }
 
 
