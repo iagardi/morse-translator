@@ -1,11 +1,13 @@
 import morseCode from "../data/data.js";
-import { translateToMorse, translateToEnglish } from "./translator.js";
+import {
+   translateToMorse,
+   translateToEnglish
+} from "./translator.js";
 
 
 
 const input = document.querySelector("#main__entry")
 const output = document.querySelector("#main__output")
-const translateButton = document.querySelector(".main__translate")
 const reset = document.querySelector("#reset")
 const swap = document.querySelector("#swap")
 
@@ -35,10 +37,10 @@ swap.addEventListener("click", event => {
    E2M.classList.toggle("invisible")
    M2E.classList.toggle("invisible")
    howto.forEach(element => {
-      element.classList.toggle("invisible")   
+      element.classList.toggle("invisible")
    });
    translate.forEach(element => {
-      element.classList.toggle("invisible")   
+      element.classList.toggle("invisible")
    });
    input.value = ""
    output.value = ""
